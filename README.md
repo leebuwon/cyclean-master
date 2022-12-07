@@ -1,8 +1,6 @@
 # cyclean-master
 wecyclean-project BE
 
-reward 추가
-
 <img width="986" alt="logo image" src="https://user-images.githubusercontent.com/101182523/205540530-c54067ff-0b4f-4756-a8aa-b2ceda315f4e.png">
 
 ## ✔︎ 프로젝트 일상:한컷
