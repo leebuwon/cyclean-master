@@ -1,8 +1,9 @@
 # cyclean-master
 wecyclean-project BE
-✔︎ ( JWT 구현 )
 
-✔︎ 통합 프로젝트 링크 : https://github.com/separate-the-trash/capstone_project 
+## ✔︎ ( JWT 구현 )
+
+## ✔︎ 통합 프로젝트 링크 : https://github.com/separate-the-trash/capstone_project 
 
 
 <img width="986" alt="logo image" src="https://user-images.githubusercontent.com/101182523/205540530-c54067ff-0b4f-4756-a8aa-b2ceda315f4e.png">
