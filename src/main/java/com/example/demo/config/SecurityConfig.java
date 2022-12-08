@@ -1,7 +1,6 @@
 package com.example.demo.config;
 
 import com.example.demo.config.jwt.JwtAuthenticationFilter;
-import com.example.demo.config.jwt.JwtAuthorizationFilter;
 import com.example.demo.config.jwt.JwtProcessor;
 import com.example.demo.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
@@ -37,7 +36,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .formLogin().disable()
                 .httpBasic().disable()
 
-                // filter 생략
+                // filter 부분 생략
 //                .addFilter(corsFilter())
 //                .addFilter(jwtAuthenticationFilter)
 //                .addFilter(new JwtAuthenticationFilter(authenticationManager(), jwtProcessor))
@@ -50,6 +49,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .mvcMatchers("/reply/**").permitAll()
                 .mvcMatchers("/map", "/addMap").permitAll()
                 .anyRequest().permitAll();
+
                    /**
                     *  권한 설정 User만 들어갈 수 있도록 수정
                     *  */
