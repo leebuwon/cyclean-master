@@ -1,5 +1,5 @@
 # cyclean-master
-wecyclean-project BE
+wecyclean-project BE ( spirng boot )
 
 ## ✔︎  이부원 : ( JWT 구현 )
 
