@@ -37,6 +37,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .formLogin().disable()
                 .httpBasic().disable()
 
+                // filter 생략
+//                .addFilter(corsFilter())
+//                .addFilter(jwtAuthenticationFilter)
+//                .addFilter(new JwtAuthenticationFilter(authenticationManager(), jwtProcessor))
+//                .addFilter(new JwtAuthorizationFilter(authenticationManager(), userRepository, jwtProcessor))
+
                 .authorizeRequests()
                 .mvcMatchers("/account/register", "/account/login").permitAll() // login, register을 permitAll 해서 아무나 들어갈 수 있음
                 .mvcMatchers("/account/users").permitAll()
@@ -44,9 +50,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .mvcMatchers("/reply/**").permitAll()
                 .mvcMatchers("/map", "/addMap").permitAll()
                 .anyRequest().permitAll();
-                /**
-                 *  권한 설정
-                 */
+                   /**
+                    *  권한 설정 User만 들어갈 수 있도록 수정
+                    *  */
 //                .mvcMatchers("/account/api/user").access("hasAuthority('USER')") // USER 권한이 있으면 들어갈 수 있음 ( 테스트 용 )
 //                .mvcMatchers("/board/**").access("hasAuthority('USER')") // board 권한 수정
 //                .mvcMatchers("/reply/**").access("hasAuthority('USER')") // reply 권한 수정
