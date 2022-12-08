@@ -1,7 +1,7 @@
 # cyclean-master
 wecyclean-project BE ( spirng boot )
 
-## ✔︎  이부원 : ( JWT 구현 )
+## ✔︎  이부원 : ( login / JWT 구현 )
 
 ## ✔︎ 통합 프로젝트 링크
 https://github.com/separate-the-trash/capstone_project 
